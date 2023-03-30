@@ -57,11 +57,11 @@ window.addEventListener("scroll", scrollHeader)
 const sections = document.querySelectorAll("section");
 const links = document.querySelectorAll(".nav__menu .nav__list li a")
 
-
+ 
 window.addEventListener("scroll", ()=>{
     let current = "";
 
-    const scrollY = window.pageYOffset;
+    const scrollY = window.scrollY;
 
     sections.forEach( section => {
         const top = section.offsetTop;
